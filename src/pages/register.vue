@@ -15,7 +15,7 @@ const form = ref({
   email: '',
   password: '',
 })
- 
+
 const rulesUser = ref({
   emailRules: [
     v => !!v || "Пошта обов'язкова",

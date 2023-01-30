@@ -62,7 +62,7 @@ const logout = () => {
           <VDivider class="my-2" />
 
           <!-- 👉 Profile -->
-          <VListItem link>
+          <VListItem to="/account-settings">
             <template #prepend>
               <VIcon
                 class="me-2"
@@ -71,20 +71,7 @@ const logout = () => {
               />
             </template>
 
-            <VListItemTitle>Profile</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Settings -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="mdi-cog-outline"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Settings</VListItemTitle>
+            <VListItemTitle>Профіль</VListItemTitle>
           </VListItem>
 
           <!-- Divider -->
@@ -100,7 +87,7 @@ const logout = () => {
               />
             </template>
 
-            <VListItemTitle @click='logout'>Logout</VListItemTitle>
+            <VListItemTitle @click='logout'>Вийти</VListItemTitle>
           </VListItem>
         </VList>
       </VMenu>
